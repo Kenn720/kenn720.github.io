@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slideshows
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+    - views
+  theme:
+    - gavias_great
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: views_block__slideshows_block_2
+theme: gavias_great
+region: fw_promotion
+weight: -19
+provider: null
+plugin: 'views_block:slideshows-block_2'
+settings:
+  id: 'views_block:slideshows-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/68
+    negate: false
+    context_mapping: {  }
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

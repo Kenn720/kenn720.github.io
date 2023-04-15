@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.article_blocks
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+    - views
+  theme:
+    - gavias_great
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: views_block__article_blocks_block_12
+theme: gavias_great
+region: promotion
+weight: -30
+provider: null
+plugin: 'views_block:article_blocks-block_12'
+settings:
+  id: 'views_block:article_blocks-block_12'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: "/taxonomy/term/*\r\n/articles-gird\r\n/articles-masonry\r\n/articles-list\r\n/articles-small\r\n/articles-big"
+    negate: false
+    context_mapping: {  }

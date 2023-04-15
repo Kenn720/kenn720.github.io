@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-mobile
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_great
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: menumobile
+theme: gavias_great
+region: offcanvas
+weight: null
+provider: null
+plugin: 'system_menu_block:menu-mobile'
+settings:
+  id: 'system_menu_block:menu-mobile'
+  label: 'Menu Mobile'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
